@@ -1,0 +1,28 @@
+<template lang="jade">
+div
+  p {{ greeting }} World!
+  OtherComponent
+</template>
+
+<script>
+import OtherComponent from './OtherComponent.vue'
+export default {
+  components: {
+    OtherComponent
+  },
+  test: test.Test,
+  test: test.Test2,
+  test: test.Test3,
+  data () {
+    return {
+      greeting: 'Hello'
+    }
+  }
+}
+</script>
+
+<style lang="stylus" scoped>
+p
+  font-size 2em
+  text-align center
+</style>
